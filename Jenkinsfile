@@ -1,9 +1,9 @@
 pipeline {
 	environment {
-		registry = "vancherla/Git-jen-doc"
+		registry = "vancherla/pipe-1-git-jen-docker"
 		registryCredential = 'dockerhub'
 		dockerImage = ''
-		dockerRunCommand = 'docker run -d -p 8080:8080 -name myapp vancherla/Git-jen-doc'
+		dockerRunCommand = 'docker run -d -p 8080:8080 -name myapp vancherla/pipe-1-git-jen-docker'
 	}
 	agent any
 	stages {
